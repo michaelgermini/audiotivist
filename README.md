@@ -229,7 +229,7 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 - **Issues** : [GitHub Issues](https://github.com/michaelgermini/audiotivist/issues)
 - **Discussions** : [GitHub Discussions](https://github.com/michaelgermini/audiotivist/discussions)
-- **Email** : contact@audiotivist.com
+- **Email** : michael@germini.info
 
 ---
 
