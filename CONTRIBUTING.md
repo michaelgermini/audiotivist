@@ -13,7 +13,7 @@ Merci de votre intérêt pour contribuer à **Audiotivist** ! Ce document vous g
 ### Installation
 ```bash
 # Fork et cloner le repository
-git clone https://github.com/votre-username/audiotivist.git
+git clone https://github.com/michaelgermini/audiotivist.git
 cd audiotivist
 
 # Installer les dépendances
@@ -227,8 +227,8 @@ npm run test:coverage
 
 ## 🆘 Besoin d'Aide ?
 
-- **Issues** : [GitHub Issues](https://github.com/votre-username/audiotivist/issues)
-- **Discussions** : [GitHub Discussions](https://github.com/votre-username/audiotivist/discussions)
+- **Issues** : [GitHub Issues](https://github.com/michaelgermini/audiotivist/issues)
+- **Discussions** : [GitHub Discussions](https://github.com/michaelgermini/audiotivist/discussions)
 - **Email** : contact@audiotivist.com
 
 ## 📄 Licence

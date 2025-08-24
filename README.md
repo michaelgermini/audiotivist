@@ -38,7 +38,7 @@
 ### Installation
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-username/audiotivist.git
+git clone https://github.com/michaelgermini/audiotivist.git
 cd audiotivist
 
 # Installer les dépendances
@@ -196,8 +196,8 @@ Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de déta
 
 ## 📞 Support
 
-- **Issues** : [GitHub Issues](https://github.com/votre-username/audiotivist/issues)
-- **Discussions** : [GitHub Discussions](https://github.com/votre-username/audiotivist/discussions)
+- **Issues** : [GitHub Issues](https://github.com/michaelgermini/audiotivist/issues)
+- **Discussions** : [GitHub Discussions](https://github.com/michaelgermini/audiotivist/discussions)
 - **Email** : contact@audiotivist.com
 
 ---

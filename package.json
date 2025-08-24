@@ -19,12 +19,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/votre-username/audiotivist.git"
+    "url": "https://github.com/michaelgermini/audiotivist.git"
   },
   "bugs": {
-    "url": "https://github.com/votre-username/audiotivist/issues"
+    "url": "https://github.com/michaelgermini/audiotivist/issues"
   },
-  "homepage": "https://github.com/votre-username/audiotivist#readme",
+  "homepage": "https://github.com/michaelgermini/audiotivist#readme",
   "type": "module",
   "scripts": {
     "dev": "vite",
