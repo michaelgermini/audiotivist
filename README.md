@@ -2,6 +2,8 @@
 
 **Audiotivist** is a modern software for parallel audio-visual production and performance. Designed for VJs, musicians, and content creators, it offers an efficient workflow for mixing video and generative graphics in real-time.
 
+> ⚠️ **First Version Notice**: This is the initial release with known bugs and limitations. While not perfect, it provides a solid foundation for audio-visual performance tools. We're actively working on improvements!
+
 ![Audiotivist Interface](canvas.png)
 
 ## ✨ Features
@@ -170,6 +172,30 @@ npm run lint         # Code verification
 - **Web Audio API** : For audio processing
 - **File API** : For video uploads
 - **Fullscreen API** : For fullscreen mode
+
+## ⚠️ Known Limitations (v1.0.0)
+
+As this is the first version, please be aware of the following limitations:
+
+### 🐛 **Current Issues**
+- **Video playback** : Some MP4 files may have performance issues
+- **Audio synchronization** : Occasional delays in audio-visual sync
+- **Memory usage** : Large video files can cause memory leaks
+- **Browser compatibility** : Some features may not work on older browsers
+
+### 🚧 **Work in Progress**
+- **Performance optimization** : Better video rendering and memory management
+- **Audio analysis** : More accurate real-time audio processing
+- **UI responsiveness** : Improved interface on smaller screens
+- **Error handling** : Better error recovery and user feedback
+
+### 💡 **Future Plans**
+- **Export functionality** : Save and export video projects
+- **More effects** : Additional visual effects and transitions
+- **MIDI mapping** : Better external controller support
+- **Project templates** : Pre-configured setups for different use cases
+
+*Despite these limitations, Audiotivist provides a solid foundation for audio-visual performance and is actively being improved!*
 
 ## 🤝 Contributing
 
