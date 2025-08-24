@@ -1,79 +1,79 @@
 # Changelog
 
-Tous les changements notables de ce projet seront documentés dans ce fichier.
+All notable changes to this project will be documented in this file.
 
-Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
-et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2024-12-19
 
-### Ajouté
-- **Interface principale** : Interface moderne avec thème sombre
-- **VideoMixer** : Mixage multi-couches avec support MP4 optimisé
-- **AudioController** : Intégration audio avec Tone.js et analyse temps réel
-- **EffectsPanel** : Panneau d'effets avec 3 onglets (Effects, Generative, Transitions)
-- **Sidebar** : Gestion des couches et upload de vidéos
-- **TopBar** : Contrôles principaux et statut
-- **Timeline** : Timeline de lecture avec contrôles de transport
-- **ErrorBoundary** : Gestion d'erreurs robuste
+### Added
+- **Main interface** : Modern interface with dark theme
+- **VideoMixer** : Multi-layer mixing with optimized MP4 support
+- **AudioController** : Audio integration with Tone.js and real-time analysis
+- **EffectsPanel** : Effects panel with 3 tabs (Effects, Generative, Transitions)
+- **Sidebar** : Layer management and video uploads
+- **TopBar** : Main controls and status
+- **Timeline** : Playback timeline with transport controls
+- **ErrorBoundary** : Robust error handling
 
-### Fonctionnalités Vidéo
-- Support multi-formats (MP4, WebM, AVI, MOV)
-- Contrôles d'opacité et visibilité par couche
-- Tailles multiples (320x240, 640x480, 1280x720, 800x600)
-- Mode plein écran
-- Optimisations MP4 avec `playsInline`, `preload="metadata"`
-- Gestion d'erreurs vidéo améliorée
+### Video Features
+- Multi-format support (MP4, WebM, AVI, MOV)
+- Layer opacity and visibility controls
+- Multiple sizes (320x240, 640x480, 1280x720, 800x600)
+- Fullscreen mode
+- MP4 optimizations with `playsInline`, `preload="metadata"`
+- Enhanced video error handling
 
-### Fonctionnalités Audio
-- Analyse audio temps réel avec Tone.js
-- Support MIDI pour contrôleurs externes
-- Communication OSC
-- Gestion des périphériques audio
-- Activation par interaction utilisateur
+### Audio Features
+- Real-time audio analysis with Tone.js
+- MIDI support for external controllers
+- OSC communication
+- Audio device management
+- User interaction activation
 
-### Graphiques Génératifs
-- Intégration P5.js pour animations 2D
-- Intégration Three.js pour éléments 3D
-- Graphiques audio-réactifs
-- Patterns génératifs multiples
-- Effets de transition avancés
+### Generative Graphics
+- P5.js integration for 2D animations
+- Three.js integration for 3D elements
+- Audio-reactive graphics
+- Multiple generative patterns
+- Advanced transition effects
 
-### Interface Utilisateur
-- Design responsive adaptatif
-- Animations fluides avec Framer Motion
-- Icônes modernes avec Lucide React
-- Thème sombre optimisé pour performances
-- Contrôles intuitifs pour VJ
+### User Interface
+- Responsive adaptive design
+- Smooth animations with Framer Motion
+- Modern icons with Lucide React
+- Dark theme optimized for performances
+- Intuitive VJ controls
 
 ### Performance
-- Optimisations WebGL pour graphiques
-- Gestion mémoire des vidéos
-- Frame skipping pour effets complexes
-- Chargement asynchrone des ressources
+- WebGL optimizations for graphics
+- Video memory management
+- Frame skipping for complex effects
+- Asynchronous resource loading
 
-### Compatibilité
-- Support navigateurs modernes (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
-- WebGL requis pour graphiques 3D
-- Web Audio API pour traitement audio
-- File API pour upload vidéos
+### Compatibility
+- Modern browser support (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
+- WebGL required for 3D graphics
+- Web Audio API for audio processing
+- File API for video uploads
 
-### Développement
-- Configuration Vite pour build rapide
-- ESLint et Prettier pour qualité du code
-- Structure modulaire React
-- Documentation complète
+### Development
+- Vite configuration for fast builds
+- ESLint and Prettier for code quality
+- Modular React structure
+- Complete documentation
 
 ---
 
 ## [0.1.0] - 2024-12-18
 
-### Ajouté
-- Structure initiale du projet
-- Configuration de base React + Vite
-- Composants de base
-- Intégration Three.js et P5.js
+### Added
+- Initial project structure
+- Basic React + Vite configuration
+- Base components
+- Three.js and P5.js integration
 
 ---
 
-**Note** : Ce projet suit le [Semantic Versioning](https://semver.org/).
+**Note** : This project follows [Semantic Versioning](https://semver.org/).

@@ -50,36 +50,36 @@ const VideoMixer = ({ layers, isPlaying, selectedLayer, onLayerUpdate }) => {
     }
   }, [canvasSize])
 
-  // Nettoyer les URLs des vidéos quand le composant se démonte
-  useEffect(() => {
-    return () => {
-      // Libérer la mémoire des URLs de vidéos
-      Object.values(videoRefs.current).forEach(video => {
-        if (video && video.src) {
-          URL.revokeObjectURL(video.src)
-        }
-      })
-    }
-  }, [])
+     // Clean up video URLs when component unmounts
+   useEffect(() => {
+     return () => {
+       // Free memory from video URLs
+       Object.values(videoRefs.current).forEach(video => {
+         if (video && video.src) {
+           URL.revokeObjectURL(video.src)
+         }
+       })
+     }
+   }, [])
 
-  // Synchroniser la lecture des vidéos avec l'état isPlaying
-  useEffect(() => {
-    Object.values(videoRefs.current).forEach(video => {
-      if (video && video.readyState >= 2) { // HAVE_CURRENT_DATA
-        if (isPlaying) {
-          video.play().catch(e => {
-            console.log('Video play error:', e)
-            // Essayer de recharger la vidéo si elle ne peut pas être lue
-            if (e.name === 'NotSupportedError') {
-              video.load()
-            }
-          })
-        } else {
-          video.pause()
-        }
-      }
-    })
-  }, [isPlaying])
+     // Synchronize video playback with isPlaying state
+   useEffect(() => {
+     Object.values(videoRefs.current).forEach(video => {
+       if (video && video.readyState >= 2) { // HAVE_CURRENT_DATA
+         if (isPlaying) {
+           video.play().catch(e => {
+             console.log('Video play error:', e)
+             // Try to reload video if it can't be played
+             if (e.name === 'NotSupportedError') {
+               video.load()
+             }
+           })
+         } else {
+           video.pause()
+         }
+       }
+     })
+   }, [isPlaying])
 
   const initializeThreeJS = () => {
     if (!canvasRef.current) return
@@ -182,25 +182,25 @@ const VideoMixer = ({ layers, isPlaying, selectedLayer, onLayerUpdate }) => {
   const handleVideoUpload = (layerId, event) => {
     const file = event.target.files[0]
     if (file && file.type.startsWith('video/')) {
-      // Vérifier la taille du fichier (max 100MB)
-      if (file.size > 100 * 1024 * 1024) {
-        alert('Fichier trop volumineux. Taille maximum: 100MB')
-        return
-      }
+             // Check file size (max 100MB)
+       if (file.size > 100 * 1024 * 1024) {
+         alert('File too large. Maximum size: 100MB')
+         return
+       }
       
-      // Créer l'URL avec des options optimisées pour MP4
-      const url = URL.createObjectURL(file, { type: file.type })
-      
-      console.log(`Uploading video: ${file.name}, size: ${(file.size / 1024 / 1024).toFixed(2)}MB, type: ${file.type}`)
-      
-      // Mettre à jour la couche avec l'URL de la vidéo
-      onLayerUpdate(layerId, { 
-        videoUrl: url,
-        videoFile: file.name
-      })
-    } else {
-      alert('Veuillez sélectionner un fichier vidéo valide (MP4, WebM, etc.)')
-    }
+             // Create URL with MP4 optimized options
+       const url = URL.createObjectURL(file, { type: file.type })
+       
+       console.log(`Uploading video: ${file.name}, size: ${(file.size / 1024 / 1024).toFixed(2)}MB, type: ${file.type}`)
+       
+       // Update layer with video URL
+       onLayerUpdate(layerId, { 
+         videoUrl: url,
+         videoFile: file.name
+       })
+     } else {
+       alert('Please select a valid video file (MP4, WebM, etc.)')
+     }
   }
 
   const toggleFullscreen = () => {
@@ -237,12 +237,12 @@ const VideoMixer = ({ layers, isPlaying, selectedLayer, onLayerUpdate }) => {
             ref={(el) => {
               if (el) {
                 videoRefs.current[layer.id] = el
-                // Synchroniser la lecture avec l'état global
-                if (isPlaying) {
-                  el.play().catch(e => console.log('Video play error:', e))
-                } else {
-                  el.pause()
-                }
+                             // Synchronize playback with global state
+             if (isPlaying) {
+               el.play().catch(e => console.log('Video play error:', e))
+             } else {
+               el.pause()
+             }
               }
             }}
             src={layer.videoUrl}
@@ -258,12 +258,12 @@ const VideoMixer = ({ layers, isPlaying, selectedLayer, onLayerUpdate }) => {
               objectFit: 'cover',
               pointerEvents: 'none'
             }}
-            onLoadedMetadata={(e) => {
-              // Mettre à jour la durée du projet si nécessaire
-              if (e.target.duration > 0) {
-                console.log(`Video loaded: ${layer.videoFile}, duration: ${e.target.duration}s`)
-              }
-            }}
+                         onLoadedMetadata={(e) => {
+               // Update project duration if needed
+               if (e.target.duration > 0) {
+                 console.log(`Video loaded: ${layer.videoFile}, duration: ${e.target.duration}s`)
+               }
+             }}
             onError={(e) => {
               console.error('Video error:', e.target.error)
             }}
@@ -271,7 +271,7 @@ const VideoMixer = ({ layers, isPlaying, selectedLayer, onLayerUpdate }) => {
               console.log(`Video can play: ${layer.videoFile}`)
             }}
           />
-            {/* Indicateur de chargement */}
+                         {/* Loading indicator */}
             <div 
               className="video-loading"
               style={{
@@ -285,7 +285,7 @@ const VideoMixer = ({ layers, isPlaying, selectedLayer, onLayerUpdate }) => {
                 opacity: 0.8
               }}
             >
-              Chargement vidéo...
+                             Loading video...
             </div>
           </>
         )}
@@ -357,7 +357,7 @@ const VideoMixer = ({ layers, isPlaying, selectedLayer, onLayerUpdate }) => {
              pointerEvents: 'none'
            }}>
              <div style={{ marginBottom: '8px' }}>🎥</div>
-             <div>Cliquez sur l'icône vidéo dans la sidebar pour ajouter des vidéos</div>
+                           <div>Click the video icon in the sidebar to add videos</div>
            </div>
          )}
        </div>

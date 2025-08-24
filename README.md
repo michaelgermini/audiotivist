@@ -1,141 +1,146 @@
 # 🎵 Audiotivist
 
-**Audiotivist** est un logiciel moderne pour la production et performance audio-visuelle parallèle. Conçu pour les VJ, musiciens et créateurs de contenu, il offre un workflow efficace pour mixer vidéo et graphiques génératifs en temps réel.
+**Audiotivist** is a modern software for parallel audio-visual production and performance. Designed for VJs, musicians, and content creators, it offers an efficient workflow for mixing video and generative graphics in real-time.
 
-## ✨ Fonctionnalités
+![Audiotivist Interface](canvas.png)
 
-### 🎥 **Mixage Vidéo Avancé**
-- **Multi-couches** : Jusqu'à 8 couches vidéo simultanées
-- **Formats supportés** : MP4, WebM, AVI, MOV, etc.
-- **Contrôles temps réel** : Opacité, visibilité, sélection
-- **Tailles multiples** : 320x240, 640x480, 1280x720, 800x600
+## ✨ Features
 
-### 🎨 **Graphiques Génératifs**
-- **P5.js** : Animations 2D réactives
-- **Three.js** : Éléments 3D interactifs
-- **Audio-réactif** : Synchronisation avec l'audio
-- **Effets visuels** : Distorsion, masques, transitions
+### 🎥 **Advanced Video Mixing**
+- **Multi-layer** : Up to 8 simultaneous video layers
+- **Supported formats** : MP4, WebM, AVI, MOV, etc.
+- **Real-time controls** : Opacity, visibility, selection
+- **Multiple sizes** : 320x240, 640x480, 1280x720, 800x600
 
-### 🎵 **Intégration Audio**
-- **Tone.js** : Traitement audio avancé
-- **Analyse temps réel** : Spectre, fréquence, amplitude
-- **MIDI** : Support des contrôleurs externes
-- **OSC** : Communication réseau
+### 🎨 **Generative Graphics**
+- **P5.js** : Reactive 2D animations
+- **Three.js** : Interactive 3D elements
+- **Audio-reactive** : Synchronization with audio
+- **Visual effects** : Distortion, masks, transitions
 
-### 🎛️ **Interface Performancielle**
-- **GUI compacte** : Optimisée pour les performances live
-- **Contrôles rapides** : Raccourcis clavier et souris
-- **Mode plein écran** : Sortie dédiée
-- **Responsive** : Adapté à tous les écrans
+### 🎵 **Audio Integration**
+- **Tone.js** : Advanced audio processing
+- **Real-time analysis** : Spectrum, frequency, amplitude
+- **MIDI** : External controller support
+- **OSC** : Network communication
+
+### 🎛️ **Performance Interface**
+- **Compact GUI** : Optimized for live performances
+- **Quick controls** : Keyboard and mouse shortcuts
+- **Fullscreen mode** : Dedicated output
+- **Responsive** : Adapted to all screens
 
 ## 🚀 Installation
 
-### Prérequis
+### Live Demo
+🎬 **Try Audiotivist online**: [https://audiotivist.vercel.app/](https://audiotivist.vercel.app/)
+
+### Prerequisites
 - **Node.js** 18+ 
-- **npm** ou **yarn**
-- **Navigateur moderne** (Chrome, Firefox, Safari, Edge)
+- **npm** or **yarn**
+- **Modern browser** (Chrome, Firefox, Safari, Edge)
 
 ### Installation
 ```bash
-# Cloner le repository
+# Clone the repository
 git clone https://github.com/michaelgermini/audiotivist.git
 cd audiotivist
 
-# Installer les dépendances
+# Install dependencies
 npm install
 
-# Lancer en mode développement
+# Start development mode
 npm run dev
 
-# Construire pour la production
+# Build for production
 npm run build
 ```
 
-## 🎯 Utilisation
+## 🎯 Usage
 
-### Démarrage Rapide
-1. **Lancer l'application** : `npm run dev`
-2. **Ouvrir le navigateur** : `http://localhost:5173`
-3. **Ajouter des vidéos** : Cliquer sur l'icône vidéo dans la sidebar
-4. **Activer l'audio** : Cliquer sur l'icône audio pour autoriser le microphone
-5. **Mixer** : Utiliser les contrôles de couches pour ajuster l'opacité et la visibilité
+### Quick Start
+1. **Launch the application** : `npm run dev`
+2. **Open browser** : `http://localhost:5173`
+3. **Add videos** : Click the video icon in the sidebar
+4. **Activate audio** : Click the audio icon to authorize microphone
+5. **Mix** : Use layer controls to adjust opacity and visibility
 
-### Contrôles Principaux
-- **Play/Pause** : Barre d'espace ou bouton dans la TopBar
-- **Sélection de couche** : Clic sur une couche dans le VideoMixer
-- **Ajustement d'opacité** : Slider dans les contrôles de couche
-- **Plein écran** : Bouton "Fullscreen" dans le VideoMixer
+### Main Controls
+- **Play/Pause** : Spacebar or button in TopBar
+- **Layer selection** : Click on a layer in VideoMixer
+- **Opacity adjustment** : Slider in layer controls
+- **Fullscreen** : "Fullscreen" button in VideoMixer
 
-### Effets Visuels
-- **Onglet Effects** : Effets de base (luminosité, contraste, etc.)
-- **Onglet Generative** : Graphiques génératifs et patterns
-- **Onglet Transitions** : Transitions entre scènes
+### Visual Effects
+- **Effects tab** : Basic effects (brightness, contrast, etc.)
+- **Generative tab** : Generative graphics and patterns
+- **Transitions tab** : Scene transitions
 
-## 🛠️ Architecture Technique
+## 🛠️ Technical Architecture
 
 ### Frontend
-- **React 18** : Interface utilisateur
-- **Vite** : Build tool et dev server
-- **Framer Motion** : Animations fluides
-- **Lucide React** : Icônes modernes
+- **React 18** : User interface
+- **Vite** : Build tool and dev server
+- **Framer Motion** : Smooth animations
+- **Lucide React** : Modern icons
 
-### Graphiques
-- **Three.js** : Rendu 3D WebGL
-- **P5.js** : Graphiques 2D génératifs
-- **WebGL** : Accélération matérielle
+### Graphics
+- **Three.js** : WebGL 3D rendering
+- **P5.js** : Generative 2D graphics
+- **WebGL** : Hardware acceleration
 
 ### Audio
-- **Tone.js** : Framework audio avancé
-- **Web Audio API** : API audio native
-- **MIDI API** : Support des contrôleurs
-- **OSC** : Communication réseau
+- **Tone.js** : Advanced audio framework
+- **Web Audio API** : Native audio API
+- **MIDI API** : Controller support
+- **OSC** : Network communication
 
 ### Styling
-- **CSS Variables** : Thème personnalisable
-- **Responsive Design** : Adaptatif mobile/desktop
-- **Dark Theme** : Interface sombre moderne
+- **CSS Variables** : Customizable theme
+- **Responsive Design** : Mobile/desktop adaptive
+- **Dark Theme** : Modern dark interface
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
 ```
 audiotivist/
-├── public/                 # Assets statiques
+├── public/                 # Static assets
 ├── src/
-│   ├── components/         # Composants React
-│   │   ├── VideoMixer.jsx  # Mixeur vidéo principal
-│   │   ├── AudioController.jsx # Contrôleur audio
-│   │   ├── EffectsPanel.jsx # Panneau d'effets
-│   │   ├── Sidebar.jsx     # Barre latérale
-│   │   ├── TopBar.jsx      # Barre supérieure
-│   │   ├── Timeline.jsx    # Timeline de lecture
-│   │   └── ErrorBoundary.jsx # Gestion d'erreurs
-│   ├── App.jsx            # Composant principal
-│   ├── main.jsx           # Point d'entrée
-│   └── index.css          # Styles globaux
-├── package.json           # Dépendances et scripts
-├── vite.config.js         # Configuration Vite
+│   ├── components/         # React components
+│   │   ├── VideoMixer.jsx  # Main video mixer
+│   │   ├── AudioController.jsx # Audio controller
+│   │   ├── EffectsPanel.jsx # Effects panel
+│   │   ├── Sidebar.jsx     # Sidebar
+│   │   ├── TopBar.jsx      # Top bar
+│   │   ├── Timeline.jsx    # Timeline
+│   │   └── ErrorBoundary.jsx # Error handling
+│   ├── App.jsx            # Main component
+│   ├── main.jsx           # Entry point
+│   └── index.css          # Global styles
+├── package.json           # Dependencies and scripts
+├── vite.config.js         # Vite configuration
 └── README.md              # Documentation
 ```
 
-## 🎨 Personnalisation
+## 🎨 Customization
 
-### Thème
-Modifiez les variables CSS dans `src/index.css` :
+### Theme
+Modify CSS variables in `src/index.css` :
 ```css
 :root {
   --primary: #6366f1;
   --background: #0f0f23;
   --surface: #1a1a2e;
   --text: #ffffff;
-  /* ... autres variables */
+  /* ... other variables */
 }
 ```
 
-### Effets Personnalisés
-Ajoutez vos propres effets dans `src/components/EffectsPanel.jsx` :
+### Custom Effects
+Add your own effects in `src/components/EffectsPanel.jsx` :
 ```javascript
 const customEffect = {
-  name: 'Mon Effet',
+  name: 'My Effect',
   parameters: {
     intensity: { min: 0, max: 1, default: 0.5 },
     speed: { min: 0, max: 10, default: 1 }
@@ -143,56 +148,56 @@ const customEffect = {
 }
 ```
 
-## 🔧 Scripts Disponibles
+## 🔧 Available Scripts
 
 ```bash
-npm run dev          # Serveur de développement
-npm run build        # Build de production
-npm run preview      # Prévisualiser le build
-npm run lint         # Vérification du code
+npm run dev          # Development server
+npm run build        # Production build
+npm run preview      # Preview build
+npm run lint         # Code verification
 ```
 
-## 🌐 Compatibilité
+## 🌐 Compatibility
 
-### Navigateurs Supportés
+### Supported Browsers
 - **Chrome** 90+
 - **Firefox** 88+
 - **Safari** 14+
 - **Edge** 90+
 
-### Fonctionnalités Requises
-- **WebGL** : Pour les graphiques 3D
-- **Web Audio API** : Pour le traitement audio
-- **File API** : Pour l'upload de vidéos
-- **Fullscreen API** : Pour le mode plein écran
+### Required Features
+- **WebGL** : For 3D graphics
+- **Web Audio API** : For audio processing
+- **File API** : For video uploads
+- **Fullscreen API** : For fullscreen mode
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-Les contributions sont les bienvenues ! Voici comment contribuer :
+Contributions are welcome! Here's how to contribute:
 
-1. **Fork** le projet
-2. **Créer** une branche feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** vos changements (`git commit -m 'Add AmazingFeature'`)
-4. **Push** vers la branche (`git push origin feature/AmazingFeature`)
-5. **Ouvrir** une Pull Request
+1. **Fork** the project
+2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
 
 ### Guidelines
-- **Code style** : Suivre les conventions ESLint
-- **Tests** : Ajouter des tests pour les nouvelles fonctionnalités
-- **Documentation** : Mettre à jour le README si nécessaire
-- **Performance** : Optimiser pour les performances temps réel
+- **Code style** : Follow ESLint conventions
+- **Tests** : Add tests for new features
+- **Documentation** : Update README if necessary
+- **Performance** : Optimize for real-time performance
 
-## 📄 Licence
+## 📄 License
 
-Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de détails.
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
-## 🙏 Remerciements
+## 🙏 Acknowledgments
 
-- **Three.js** : Pour les graphiques 3D
-- **P5.js** : Pour les graphiques génératifs
-- **Tone.js** : Pour le traitement audio
-- **React** : Pour l'interface utilisateur
-- **Vite** : Pour l'outil de build
+- **Three.js** : For 3D graphics
+- **P5.js** : For generative graphics
+- **Tone.js** : For audio processing
+- **React** : For user interface
+- **Vite** : For build tool
 
 ## 📞 Support
 
@@ -202,4 +207,4 @@ Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de déta
 
 ---
 
-**Audiotivist** - Créez, mixez, performez ! 🎵✨
+**Audiotivist** - Create, mix, perform! 🎵✨

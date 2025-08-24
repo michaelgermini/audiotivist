@@ -1,240 +1,240 @@
-# Guide de Contribution
+# Contributing Guide
 
-Merci de votre intérêt pour contribuer à **Audiotivist** ! Ce document vous guidera à travers le processus de contribution.
+Thank you for your interest in contributing to **Audiotivist**! This document will guide you through the contribution process.
 
-## 🚀 Démarrage Rapide
+## 🚀 Quick Start
 
-### Prérequis
+### Prerequisites
 - **Node.js** 18+ 
-- **npm** ou **yarn**
+- **npm** or **yarn**
 - **Git**
-- Un éditeur de code (VS Code recommandé)
+- A code editor (VS Code recommended)
 
 ### Installation
 ```bash
-# Fork et cloner le repository
+# Fork and clone the repository
 git clone https://github.com/michaelgermini/audiotivist.git
 cd audiotivist
 
-# Installer les dépendances
+# Install dependencies
 npm install
 
-# Lancer en mode développement
+# Start development mode
 npm run dev
 ```
 
-## 📋 Types de Contributions
+## 📋 Types of Contributions
 
-### 🐛 Signaler un Bug
-- Utilisez le template "Bug Report"
-- Incluez des étapes de reproduction claires
-- Ajoutez des captures d'écran si possible
-- Spécifiez votre environnement (OS, navigateur, version)
+### 🐛 Report a Bug
+- Use the "Bug Report" template
+- Include clear reproduction steps
+- Add screenshots if possible
+- Specify your environment (OS, browser, version)
 
-### ✨ Proposer une Fonctionnalité
-- Utilisez le template "Feature Request"
-- Décrivez clairement le besoin
-- Expliquez pourquoi cette fonctionnalité serait utile
-- Proposez une solution si possible
+### ✨ Propose a Feature
+- Use the "Feature Request" template
+- Clearly describe the need
+- Explain why this feature would be useful
+- Propose a solution if possible
 
-### 🔧 Améliorer le Code
-- Créez une branche pour votre fonctionnalité
-- Suivez les conventions de code
-- Ajoutez des tests si applicable
-- Mettez à jour la documentation
+### 🔧 Improve Code
+- Create a branch for your feature
+- Follow code conventions
+- Add tests if applicable
+- Update documentation
 
-## 🛠️ Workflow de Développement
+## 🛠️ Development Workflow
 
-### 1. Créer une Branche
+### 1. Create a Branch
 ```bash
-# Depuis la branche main
-git checkout -b feature/nom-de-la-fonctionnalite
-# ou
-git checkout -b fix/nom-du-bug
+# From main branch
+git checkout -b feature/feature-name
+# or
+git checkout -b fix/bug-name
 ```
 
-### 2. Développer
-- Écrivez du code propre et documenté
-- Suivez les conventions ESLint
-- Testez vos changements localement
-- Committez régulièrement avec des messages clairs
+### 2. Develop
+- Write clean and documented code
+- Follow ESLint conventions
+- Test your changes locally
+- Commit regularly with clear messages
 
-### 3. Tester
+### 3. Test
 ```bash
-# Vérifier le code
+# Check code
 npm run lint
 
-# Formater le code
+# Format code
 npm run format
 
-# Tester l'application
+# Test application
 npm run dev
 ```
 
-### 4. Committer
+### 4. Commit
 ```bash
-# Ajouter les fichiers
+# Add files
 git add .
 
-# Committer avec un message descriptif
-git commit -m "feat: ajouter nouvelle fonctionnalité X"
-git commit -m "fix: corriger bug dans Y"
-git commit -m "docs: mettre à jour documentation Z"
+# Commit with descriptive message
+git commit -m "feat: add new feature X"
+git commit -m "fix: fix bug in Y"
+git commit -m "docs: update documentation Z"
 ```
 
-### 5. Pousser et Créer une PR
+### 5. Push and Create PR
 ```bash
-git push origin feature/nom-de-la-fonctionnalite
+git push origin feature/feature-name
 ```
 
-## 📝 Conventions de Code
+## 📝 Code Conventions
 
-### Messages de Commit
-Utilisez le format [Conventional Commits](https://www.conventionalcommits.org/) :
+### Commit Messages
+Use [Conventional Commits](https://www.conventionalcommits.org/) format:
 
 ```
 type(scope): description
 
-feat(video): ajouter support pour format WebM
-fix(audio): corriger problème de latence
-docs(readme): mettre à jour instructions d'installation
-style(ui): améliorer design du bouton play
-refactor(mixer): simplifier logique de mixage
-test(effects): ajouter tests pour effets visuels
+feat(video): add WebM format support
+fix(audio): fix latency issue
+docs(readme): update installation instructions
+style(ui): improve play button design
+refactor(mixer): simplify mixing logic
+test(effects): add tests for visual effects
 ```
 
-Types disponibles :
-- `feat` : Nouvelle fonctionnalité
-- `fix` : Correction de bug
+Available types:
+- `feat` : New feature
+- `fix` : Bug fix
 - `docs` : Documentation
-- `style` : Formatage, points-virgules manquants, etc.
-- `refactor` : Refactoring de code
-- `test` : Ajout ou modification de tests
-- `chore` : Tâches de maintenance
+- `style` : Formatting, missing semicolons, etc.
+- `refactor` : Code refactoring
+- `test` : Adding or modifying tests
+- `chore` : Maintenance tasks
 
-### Style de Code
-- **JavaScript/React** : Suivre les règles ESLint
-- **CSS** : Utiliser les variables CSS pour les couleurs
-- **Noms de fichiers** : PascalCase pour les composants React
-- **Noms de variables** : camelCase
-- **Noms de constantes** : UPPER_SNAKE_CASE
+### Code Style
+- **JavaScript/React** : Follow ESLint rules
+- **CSS** : Use CSS variables for colors
+- **File names** : PascalCase for React components
+- **Variable names** : camelCase
+- **Constant names** : UPPER_SNAKE_CASE
 
-### Structure des Composants
+### Component Structure
 ```javascript
 // 1. Imports
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Icon } from 'lucide-react'
 
-// 2. Composant principal
-const MonComposant = ({ prop1, prop2, onAction }) => {
-  // 3. États et hooks
+// 2. Main component
+const MyComponent = ({ prop1, prop2, onAction }) => {
+  // 3. States and hooks
   const [state, setState] = useState(initialValue)
   
-  // 4. Effets
+  // 4. Effects
   useEffect(() => {
-    // logique
+    // logic
   }, [dependencies])
   
-  // 5. Fonctions
+  // 5. Functions
   const handleClick = () => {
-    // logique
+    // logic
   }
   
-  // 6. Rendu
+  // 6. Render
   return (
-    <div className="mon-composant">
+    <div className="my-component">
       {/* JSX */}
     </div>
   )
 }
 
 // 7. Export
-export default MonComposant
+export default MyComponent
 ```
 
-## 🧪 Tests
+## 🧪 Testing
 
-### Tests Manuels
-- Testez sur différents navigateurs (Chrome, Firefox, Safari, Edge)
-- Vérifiez la responsivité sur mobile/tablette
-- Testez avec différents formats de vidéos
-- Vérifiez les performances avec des fichiers volumineux
+### Manual Tests
+- Test on different browsers (Chrome, Firefox, Safari, Edge)
+- Check responsiveness on mobile/tablet
+- Test with different video formats
+- Verify performance with large files
 
-### Tests Automatisés
+### Automated Tests
 ```bash
-# Lancer les tests (quand implémentés)
+# Run tests (when implemented)
 npm test
 
-# Couverture de code
+# Code coverage
 npm run test:coverage
 ```
 
 ## 📚 Documentation
 
 ### Code
-- Commentez les fonctions complexes
-- Utilisez JSDoc pour les APIs publiques
-- Expliquez les algorithmes non évidents
+- Comment complex functions
+- Use JSDoc for public APIs
+- Explain non-obvious algorithms
 
 ### README
-- Mettez à jour le README si vous ajoutez des fonctionnalités
-- Ajoutez des exemples d'utilisation
-- Documentez les nouvelles options de configuration
+- Update README if you add features
+- Add usage examples
+- Document new configuration options
 
 ### CHANGELOG
-- Ajoutez vos changements au CHANGELOG.md
-- Suivez le format existant
-- Utilisez les catégories appropriées
+- Add your changes to CHANGELOG.md
+- Follow existing format
+- Use appropriate categories
 
-## 🎯 Zones de Contribution
+## 🎯 Contribution Areas
 
-### Priorité Haute
-- **Performance** : Optimisations vidéo/audio
-- **Stabilité** : Correction de bugs critiques
-- **Accessibilité** : Amélioration de l'accessibilité
-- **Tests** : Ajout de tests unitaires/intégration
+### High Priority
+- **Performance** : Video/audio optimizations
+- **Stability** : Critical bug fixes
+- **Accessibility** : Accessibility improvements
+- **Tests** : Unit/integration test additions
 
-### Priorité Moyenne
-- **Nouvelles fonctionnalités** : Effets visuels, contrôles audio
-- **UI/UX** : Améliorations d'interface
-- **Documentation** : Guides, tutoriels, exemples
+### Medium Priority
+- **New features** : Visual effects, audio controls
+- **UI/UX** : Interface improvements
+- **Documentation** : Guides, tutorials, examples
 
-### Priorité Basse
-- **Refactoring** : Amélioration du code existant
-- **Optimisations mineures** : Performance non critique
-- **Nouvelles dépendances** : Intégration de nouvelles librairies
+### Low Priority
+- **Refactoring** : Existing code improvements
+- **Minor optimizations** : Non-critical performance
+- **New dependencies** : New library integrations
 
-## 🤝 Processus de Review
+## 🤝 Review Process
 
-### Avant de Soumettre
-- [ ] Code linté et formaté
-- [ ] Tests passent
-- [ ] Documentation mise à jour
-- [ ] CHANGELOG mis à jour
-- [ ] Fonctionnalité testée manuellement
+### Before Submitting
+- [ ] Code linted and formatted
+- [ ] Tests pass
+- [ ] Documentation updated
+- [ ] CHANGELOG updated
+- [ ] Feature manually tested
 
-### Pendant la Review
-- Répondez aux commentaires rapidement
-- Faites les modifications demandées
-- Ajoutez des tests si nécessaire
-- Expliquez vos choix de design
+### During Review
+- Respond to comments quickly
+- Make requested changes
+- Add tests if necessary
+- Explain your design choices
 
-### Après la Review
-- Mergez seulement après approbation
-- Supprimez la branche après merge
-- Célébrez votre contribution ! 🎉
+### After Review
+- Merge only after approval
+- Delete branch after merge
+- Celebrate your contribution! 🎉
 
-## 🆘 Besoin d'Aide ?
+## 🆘 Need Help?
 
 - **Issues** : [GitHub Issues](https://github.com/michaelgermini/audiotivist/issues)
 - **Discussions** : [GitHub Discussions](https://github.com/michaelgermini/audiotivist/discussions)
 - **Email** : contact@audiotivist.com
 
-## 📄 Licence
+## 📄 License
 
-En contribuant, vous acceptez que vos contributions soient sous la même licence MIT que le projet.
+By contributing, you agree that your contributions will be under the same MIT license as the project.
 
 ---
 
-**Merci de contribuer à Audiotivist !** 🎵✨
+**Thank you for contributing to Audiotivist!** 🎵✨

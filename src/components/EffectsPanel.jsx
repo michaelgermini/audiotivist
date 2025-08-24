@@ -122,7 +122,7 @@ const EffectsPanel = ({ selectedLayer, layers, onLayerUpdate }) => {
 
   const renderEffectsTab = () => (
     <div className="effects-content">
-      {/* Effets de base */}
+      {/* Basic Effects */}
       <div className="effects-section">
         <h4><Eye size={14} /> Basic Effects</h4>
         <div className="effect-controls">
@@ -219,7 +219,7 @@ const EffectsPanel = ({ selectedLayer, layers, onLayerUpdate }) => {
         </div>
       </div>
       
-      {/* Effets de déformation */}
+      {/* Distortion Effects */}
       <div className="effects-section">
         <h4><Waves size={14} /> Distortion Effects</h4>
         <div className="effect-controls">
