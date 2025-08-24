@@ -1,0 +1,196 @@
+.audio-controller {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.audio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-light);
+}
+
+.audio-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+.audio-toggle {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.audio-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.audio-toggle.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.audio-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.audio-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.audio-section h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+.device-select {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  outline: none;
+}
+
+.device-select:focus {
+  border-color: var(--primary);
+}
+
+.midi-devices {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.midi-device {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  background: var(--surface-light);
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.midi-device span:first-child {
+  color: var(--text);
+}
+
+.midi-status {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.midi-status.connected {
+  background: var(--success);
+  color: white;
+}
+
+.no-devices {
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-style: italic;
+}
+
+.level-meters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.level-meter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.level-meter span {
+  font-size: 11px;
+  color: var(--text);
+  min-width: 40px;
+}
+
+.meter-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--surface-light);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--success), var(--warning), var(--error));
+  border-radius: 4px;
+  transition: width 0.1s ease;
+}
+
+.frequency-visualizer {
+  display: flex;
+  align-items: end;
+  gap: 1px;
+  height: 60px;
+  background: var(--surface-light);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.frequency-bar {
+  flex: 1;
+  background: var(--primary);
+  border-radius: 1px;
+  min-height: 2px;
+  transition: height 0.1s ease;
+}
+
+.midi-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 24px;
+}
+
+.midi-note {
+  background: var(--primary);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.midi-note:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+}

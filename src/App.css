@@ -1,0 +1,68 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+.center-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.right-panel {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .right-panel {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .right-panel {
+    width: 100%;
+    height: 200px;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}
+
+/* Ensure all content is visible */
+.center-panel {
+  min-width: 0;
+  min-height: 0;
+}
+
+.right-panel {
+  min-width: 280px;
+  overflow-y: auto;
+}
+
+/* Fix for small screens */
+@media (max-width: 1024px) {
+  .right-panel {
+    min-width: 250px;
+  }
+}
