@@ -119,6 +119,13 @@ audiotivist/
 │   ├── App.jsx            # Main component
 │   ├── main.jsx           # Entry point
 │   └── index.css          # Global styles
+├── scripts/               # GitHub API management scripts
+│   ├── edit_repository_details.ps1 # Main repository management
+│   ├── setup_github_simple.ps1     # Complete setup script
+│   ├── create_labels.ps1           # Custom labels creation
+│   ├── create_issues.ps1           # Initial issues creation
+│   ├── MANUAL_UPDATE.md            # Manual update guide
+│   └── SCRIPTS_README.md           # Scripts documentation
 ├── package.json           # Dependencies and scripts
 ├── vite.config.js         # Vite configuration
 └── README.md              # Documentation
