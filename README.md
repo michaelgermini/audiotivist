@@ -2,7 +2,7 @@
 
 **Audiotivist** is a modern software for parallel audio-visual production and performance. Designed for VJs, musicians, and content creators, it offers an efficient workflow for mixing video and generative graphics in real-time.
 
-> ⚠️ **First Version Notice**: This is the initial release with known bugs and limitations. While not perfect, it provides a solid foundation for audio-visual performance tools. We're actively working on improvements!
+> 🚀 **Starter Kit Notice**: This is a starter kit and foundation for audio-visual performance tools. It's designed as a starting point for developers and creators who want to build upon this base. While functional, it's meant to be customized and extended rather than used as-is in production.
 
 ![Audiotivist Interface](canvas.png)
 
@@ -173,29 +173,29 @@ npm run lint         # Code verification
 - **File API** : For video uploads
 - **Fullscreen API** : For fullscreen mode
 
-## ⚠️ Known Limitations (v1.0.0)
+## 🚀 Starter Kit Approach (v1.0.0)
 
-As this is the first version, please be aware of the following limitations:
+This starter kit is designed to be a foundation that you can build upon. Here's what to expect:
 
-### 🐛 **Current Issues**
-- **Video playback** : Some MP4 files may have performance issues
-- **Audio synchronization** : Occasional delays in audio-visual sync
-- **Memory usage** : Large video files can cause memory leaks
-- **Browser compatibility** : Some features may not work on older browsers
+### 🔧 **Current State**
+- **Video playback** : Basic MP4 support with room for optimization
+- **Audio synchronization** : Foundation for real-time audio-visual sync
+- **Memory usage** : Basic memory management that can be enhanced
+- **Browser compatibility** : Modern browser support with potential for expansion
 
-### 🚧 **Work in Progress**
-- **Performance optimization** : Better video rendering and memory management
-- **Audio analysis** : More accurate real-time audio processing
-- **UI responsiveness** : Improved interface on smaller screens
-- **Error handling** : Better error recovery and user feedback
+### 🚧 **Areas for Enhancement**
+- **Performance optimization** : Video rendering and memory management improvements
+- **Audio analysis** : Enhanced real-time audio processing capabilities
+- **UI responsiveness** : Interface improvements for different screen sizes
+- **Error handling** : More robust error recovery and user feedback systems
 
-### 💡 **Future Plans**
+### 💡 **Extension Opportunities**
 - **Export functionality** : Save and export video projects
 - **More effects** : Additional visual effects and transitions
-- **MIDI mapping** : Better external controller support
+- **MIDI mapping** : Enhanced external controller support
 - **Project templates** : Pre-configured setups for different use cases
 
-*Despite these limitations, Audiotivist provides a solid foundation for audio-visual performance and is actively being improved!*
+*This starter kit provides a solid foundation for building custom audio-visual performance tools. Feel free to fork, modify, and extend it for your specific needs!*
 
 ## 🤝 Contributing
 

@@ -33,7 +33,7 @@ Feel free to discuss:
 
 ## Important Note
 
-This is the **first version (v1.0.0)** with known limitations. We're actively working on improvements and welcome your feedback!
+This is a **starter kit (v1.0.0)** designed as a foundation for building custom audio-visual performance tools. It's meant to be forked, customized, and extended rather than used as-is in production. We welcome contributions and ideas for improvements!
 
 ## Contact
 
