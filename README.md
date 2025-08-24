@@ -1,6 +1,6 @@
 # 🎵 Audiotivist
 
-**Audiotivist** is a modern software for parallel audio-visual production and performance. Designed for VJs, musicians, and content creators, it offers an efficient workflow for mixing video and generative graphics in real-time.
+**Audiotivist** is a modern web-based audio-visual performance platform designed for VJs, musicians, and digital artists. It provides real-time video mixing, generative graphics, and audio-reactive visual effects in a single, intuitive interface.
 
 > 🚀 **Starter Kit Notice**: This is a starter kit and foundation for audio-visual performance tools. It's designed as a starting point for developers and creators who want to build upon this base. While functional, it's meant to be customized and extended rather than used as-is in production.
 

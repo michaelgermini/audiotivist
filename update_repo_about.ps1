@@ -14,9 +14,9 @@ Write-Host "🎵 Updating Audiotivist Repository About..." -ForegroundColor Gree
 # Repository update data
 $repoData = @{
     name = "audiotivist"
-    description = "🎵 Modern audio-visual production and performance software for VJs and musicians"
+            description = "🎵 Modern web-based audio-visual performance platform for VJs, musicians, and digital artists"
     homepage = "https://audiotivist.vercel.app/"
-    topics = @("vj", "audio-visual", "live-performance", "video-mixing", "generative-graphics", "threejs", "p5js", "tonejs", "react", "webgl", "music", "visualization")
+            topics = @("vj", "audio-visual", "live-performance", "video-mixing", "generative-graphics", "threejs", "p5js", "tonejs", "react", "webgl", "music", "visualization", "creative-coding", "digital-art", "performance-tools", "web-audio", "real-time", "interactive-media", "creative-technology", "multimedia", "live-events", "digital-performance")
     has_issues = $true
     has_projects = $true
     has_wiki = $true
